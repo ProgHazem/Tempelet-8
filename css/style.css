@@ -1,0 +1,503 @@
+/*Start Rules For framworks*/
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Tahoma, Arial
+}
+.contanier {
+    width: 1170px;
+    margin: auto
+}
+.clearfix {
+    clear: both
+}
+.bg-sizing {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bg-attachment {
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
+}
+.transi {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 666;
+    display: none;
+}
+.conrad, .about, .folio, .solutions, .study ,.recent ,.clients, footer {
+/*    max-width: 1170px*/
+}
+/*End Rules For framworks*/
+/*Start Conrad Section*/
+section.conrad {
+    background-image: url('../images/slide-1-fs.jpg');
+    height: 600px; 
+    padding-top: 20px;
+}
+section.conrad header .logo {
+    width: 50%;
+    float: left;
+}
+section.conrad header .logo h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #FFF;
+    margin-top: 0
+}
+section.conrad  nav {
+    width:50%;
+    float: left;
+    line-height: 34px
+}
+section.conrad nav ul {list-style: none;margin-top: 0;padding-left: 0;padding-top: 10px}
+section.conrad nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+section.conrad nav ul li.active a,
+section.conrad nav ul li:hover  a{
+    color: #FFF;
+}
+section.conrad nav ul li a {
+    text-decoration: none;
+    color: #DDD;
+}
+
+/*Start header Scroll*/
+.head-scroll {
+    background-color: #000;
+    height: 50px;
+    line-height: 50px;
+    display: none;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    padding-left: 5%;
+    padding-top: 8px;
+    padding-bottom: 60px;
+}
+/*End header Scroll*/
+section.conrad .last-conrad p:first-child {
+    color: #FFF;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 50px;
+    letter-spacing: 3px;
+}
+section.conrad .last-conrad p:last-child{
+    color: #DDD;
+    font-size: 15px
+}
+section.conrad .last-conrad p:last-child:hover span {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    display: inline-block;
+    cursor: pointer;
+}
+/*End Conrad Section*/
+/*Start ِAbout Section*/
+section.about {
+    padding: 100px 0 50px;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+}
+section.about .about-left, 
+section.about .about-middle, 
+section.about .about-right {
+    float: left;
+    width: 32%
+}
+section.about .about-left h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+section.about .about-left p {
+    line-height: 1.7
+}
+section.about .about-left p:nth-of-type(2) {
+    color: #b3b0b0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.4
+}
+section.about .about-left button {
+    border: 0;
+    outline: 0;
+    color: #b3b0b0;
+    background: none;
+    cursor: pointer
+}
+section.about .about-left button:hover {
+    color: #000;
+}
+section.about .about-middle .about-middle-img,
+section.about .about-right .about-right-img {
+    overflow: hidden;
+    position: relative;
+}
+section.about .about-middle .about-middle-img img, 
+section.about .about-right .about-right-img img {
+    width: 100%;
+}
+section.about .about-middle .about-middle-img:hover img, 
+section.about .about-right .about-right-img:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+section.about .about-middle .about-middle-img:hover .overlay, 
+section.about .about-right .about-right-img:hover .overlay {
+    display: block;
+}
+section.about .about-middle {
+    margin-right: 2%;
+    margin-left:  2%;
+}
+section.about .about-middle .about-middle-content p,
+section.about .about-right .about-right-content p {
+    color: #b3b0b0;
+    font-size: 14px;
+    line-height: 1.4
+}
+/*End Conrad Section*/
+/*Start Folio Section*/
+section.folio {
+    background-image: url('../images/slide-7-fw.jpg');
+    height:  500px;
+    text-align: center;
+    color: #FFF;
+}
+section.folio .folio-body {
+    padding-top: 8%;
+    width: 70%;
+    margin: auto
+}
+section.folio .folio-body h3 {
+    font-size: 25px;
+}
+section.folio .folio-body .magazine p {
+    line-height: 1.5;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+section.folio .folio-body .magazine p:last-of-type {
+    display: none;
+}
+section.folio .folio-body span {
+    font-style: italic;
+    color: #d4d2d2;
+}
+section.folio .folio-body button {
+    border: 1px solid #FFF;
+    outline: 0;
+    background: none;
+    margin-top: 30px;
+    margin-right: 10px;
+    width: 160px;
+    height: 34px;
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+}
+section.folio .folio-body button:hover {
+    background-color: #333;
+    border: 1px solid #FFF;
+}
+/*End Folio Section*/
+/*Start Solutions Section*/
+section.solutions {
+    overflow: hidden;
+    padding: 70px 0;
+}
+section.solutions .solutions-left {
+    width: 50%;
+    float: left;
+}
+section.solutions .solutions-left h2 {
+    font-size: 30px;
+    margin-top: 12px;
+}
+section.solutions .solutions-left p {
+    line-height: 1.7;
+}
+section.solutions .solutions-left p:nth-of-type(2) {
+    color: #b3b0b0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.4
+}
+section.solutions .solutions-left button {
+    border: 0;
+    outline: 0;
+    color: #b3b0b0;
+    background: none;
+    cursor: pointer
+}
+section.solutions .solutions-right {
+    width: 50%;
+    float: left;
+}
+section.solutions .solutions-right h3 {
+    color: #FFF;
+    background-color: #000;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+section.solutions .solutions-right p {
+    color: #444;
+    background-color: #DDD;
+    padding: 10px;
+    margin-top: 0;
+    display: none;
+}
+/*End Solutions Section*/
+/*Start Study Section*/
+section.study {
+    overflow: hidden;
+    background-color: #E62739;
+    height: 500px;
+}
+section.study .study-left {
+    width: 50%;
+    float: left;
+    padding-left: 5px;
+    padding-bottom: 60px;
+    height: 500px;
+}
+section.study .study-left h2 {
+    font-size: 30px;
+    margin-top: 12px;
+    color: #FFF;
+}
+section.study .study-left p {
+    line-height: 1.7;
+    color: #FFF;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+section.study .study-left p:nth-of-type(2) {
+        line-height: 1.4
+}
+section.study .study-left button {
+    border: 0;
+    outline: 0;
+    color: #FFF;
+    background: none;
+    cursor: pointer
+}
+section.study .study-right {
+    width: 50%;
+    float: right;
+    height: 500px;
+    background-image: url('../images/hero-half-3.jpg');
+}
+section.study .study-right .counter {
+    width: 50%;
+    height: 200px;
+    margin: 25% auto;
+    color: #FFF;
+    overflow: hidden
+}
+section.study .study-right .counter .counter-left {
+    width: 50%;
+    float: left;
+}
+section.study .study-right .counter .counter-right {
+    width: 50%;
+    float: left;
+}
+section.study .study-right .counter .counter-left p,
+section.study .study-right .counter .counter-right p {
+    font-size: 30px;
+    margin-bottom: 0;
+    font-weight: bold;
+} section.study .study-right .counter .counter-left p::after,
+section.study .study-right .counter .counter-right p::after {
+    content: " K+";
+}
+section.study .study-right .counter .counter-left span,
+section.study .study-right .counter .counter-right span {
+    color: #E62739;
+}
+/*End Conrad Section*/
+/*Start Recent Section*/
+section.recent {
+    padding: 70px 0 0 0;
+    margin-bottom: 50px;
+    height: 930px;
+}
+section.recent h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+section.recent nav {
+    text-align: center
+}
+section.recent nav ul {
+    list-style: none;
+    padding-bottom: 20px;
+}
+section.recent nav ul li {
+    display: inline-block;
+    color: #7d7979;
+    padding: 10px;
+    border: 1px solid #bdbaba;
+    border-radius: 6px;
+    cursor: pointer
+}
+section.recent .all-images {
+    padding: 40px 40px  0 40px;
+    overflow: hidden;
+}
+section.recent .all-images .images-left,
+section.recent .all-images .images-right{
+    width: 50%;
+    height:auto;
+    overflow: hidden;
+    float: left;
+}
+section.recent .all-images .images-left .images-left-left,
+section.recent .all-images .images-left .images-left-right {
+    width: 50%;
+    overflow: hidden;
+    float: left;
+}
+section.recent .all-images .images-left .images-left-left img,
+section.recent .all-images .images-left .images-left-right img {
+    width: 100%;
+    height: 100%;
+}
+section.recent .all-images .images-right .images-right-top,
+section.recent .all-images .images-right .images-right-bottom {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+section.recent .all-images .images-right .images-right-top img {
+    width: 100%;
+    height:100%;
+}
+.all-images .images-right .images-right-bottom .images-right-bottom-right,
+.all-images .images-right .images-right-bottom .images-right-bottom-left {
+    width: 50%;
+    height: 100%;    
+    float: left;
+}
+.all-images .images-right .images-right-bottom .images-right-bottom-right img,
+.all-images .images-right .images-right-bottom .images-right-bottom-left img {
+    width: 100%;
+    height: 100%;
+}
+.mix {
+    display: none;
+}
+/*End Recent Section*/
+/*Start Clients Section*/
+section.clients {
+    height: auto;
+    background-color: #9068BE;
+    padding: 30px 0;
+    color: #FFF;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden
+}
+section.clients .client {
+    width: 20%;
+    float: left;
+}
+section.clients .client p,
+section.clients .client span {
+    color: #FFF;
+}
+/*End Clients Section*/
+/*Start Footer Section*/
+footer {
+    height: 300px;
+    background-color: #333;
+    color: #FFF;
+    padding: 30px;
+}
+footer .foot-conrad {
+    width:22%;
+    margin-left: 2%;
+    float: left;
+}
+footer .foot-conrad:first-child {
+    margin-left: 0;
+}
+footer .foot-conrad a {
+    display: block;
+    text-decoration: none;
+    color: #888;
+    line-height: 2
+}
+footer .foot-conrad p, span {
+    color: #888;
+    line-height: 1.6
+}
+footer .foot-conrad form input {
+    background: none;
+    color: #FFF;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+footer .foot-conrad form input[type='text'],
+footer .foot-conrad form input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid #888;
+    outline: 0;
+}
+footer .foot-conrad form input[type='submit'] {
+    outline: 0;
+    border: 1px solid #888;
+    margin-top: 25px;
+}
+.footer-bottom {
+    height: 50px;
+    background-color: #000;
+    color: #FFF;
+    line-height: 50px;
+    overflow: hidden;
+}
+.footer-bottom .left {
+    float: left;
+}
+.footer-bottom .right {
+    float: right;
+    padding-right: 30px;
+}
+.footer-bottom .right a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+/*End Footer Section*/
