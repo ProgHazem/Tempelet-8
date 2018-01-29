@@ -1,4 +1,4 @@
-/*global $*/
+/*global $, window*/
 $(function () {
     "use strict";
 //    $('section.about .about-middle .about-middle-img', 'section.about .about-right .about-right-img').hover(function () {
@@ -31,13 +31,20 @@ $(function () {
     $('.all-images').mixItUp();
     // nice scrolling 
     $("body").niceScroll({
-        cursorwidth: "5px", 
-        cursorborder: "1px solid transparent", 
-        cursorborderradius: "5px",
+        cursorwidth: "5px",
+        cursorborder: "1px solid transparent",
+        cursorborderradius: "5px"
     });
     
     //Start counter
-    $('.counter').click( function () {
-        $('.timer').countTo();
+    $(window).scroll(function () {
+        var scroTop = $(this).scrollTop(),
+            scrOffset = $('.study').offset().top;
+        if (scroTop >= scrOffset) {
+            $('.timer').countTo();
+        }
     });
+//    $('.counter').click( function () {
+//        $('.timer').countTo();
+//    });
 });

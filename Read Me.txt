@@ -1,0 +1,25 @@
+******************************************************************
+========== Simple Site for CONRAD ==============
+
+Template 8 
+
+==> use HTML5.
+
+==> use CSS3.
+
+==> use Fontawesome
+
+==> use Jquery
+
+==> use Jquery MixitUp
+
+==> use Jquery countTo
+
+==> use Jquery Nicescroll
+
+==> use Google Fonts
+
+
+                                               thanks for reading
+                                                      Hazem
+*******************************************************************
